@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza Order Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header> <!-- this is brand logo and toolbar -->
+    <div class="brand">
+        <div class="logo">
+            <img class="logo_img" alt="logo" src="pizza.webp"/>
+        </div>
+        <div class="pizzacut">
+            <h1>PizzaCut</h1>
+        </div>
+    </div>
+
+
+    <nav>
+
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Menu</a></li>
+            <li><a href="#">Delivery</a></li>
+            <li><a href="#">Contacts</a></li>
+            <li><a href="#">Feedbacks</a></li>
+            <li><a href="#">Login/Sign up</a></li>
+
+    </nav>
+</header>
+<main>
+    <section class="Orderpizza"> <!--Pizza details section-->
+        <h2>Order</h2>
+        <div>
+            <label> Number of pizza</label>
+            <input type="number" min="1" max="10" step="1" value="1">
+        </div>
+        <div>
+            <label> Pizza Size</label>
+            <br>
+            <input type="radio" id="small" name="size" value="Small">
+            <label for="small">Small</label>
+            <input type="radio" id="medium" name="size" value="Medium">
+            <label for="medium">Medium</label>
+            <input type="radio" id="large" name="size" value="Large">
+            <label for="large">Large</label>
+        </div>
+        <div>
+            <label> Crust Type</label>
+            <select name="crust" id="crust">
+                <option value="Regular">Regular</option>
+                <option value="Thin">Thin</option>
+                <option value="Thick">Thick</option>
+                <option value="Gluten-free">Gluten-free</option>
+            </select>
+        </div>
+        <div class="Toppings">
+            <label> Toppings</label>
+            <br>
+            <input type="checkbox" id="pepperoni" name="toppings" value="pepperoni">
+            <label for="pepperoni">Pepperoni</label>
+            <input type="checkbox" id="sausage" name="toppings" value="sausage">
+            <label for="sausage">Sausage</label>
+            <input type="checkbox" id="mushroom" name="toppings" value="mushroom">
+            <label for="mushroom">Mushroom</label>
+            <input type="checkbox" id="cheese" name="toppings" value="cheese">
+            <label for="cheese">Cheese</label>
+        </div>
+
+    </section>
+    <section class="Information contacts"> <!-- Information of customers-->
+        <h2>Information Contacts</h2>
+        <div class="contact">
+            <Label>Name</Label>
+            <input type="text" name="name" placeholder="Enter your name">
+            <br>
+            <label>Phone Number</label>
+            <input type="tel" name="phone" pattern="[0[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="(123) 456-7890">
+            <br>
+            <label>Address</label>
+            <input type="text" name="address" placeholder="Enter your address">
+        </div>
+        <div class="payment">
+            <Label>Payment Methods</Label>
+            <br>
+            <input type="radio" id="Debit/Credit" name="Method" value="Debit/Credit">
+            <label for="Debit/Credit">Debit/Credit</label>
+            <input type="radio" id="Cash" name="Method" value="Cash">
+            <label for="Cash">Cash</label>
+        </div>
+        <div> <!-- To order or reset selection-->
+
+            <input type="submit" value="Order" class="Order">
+            <input type="reset" value="Reset" class="Reset">
+
+        </div>
+
+    </section>
+</main>
+<footer> <!-- Footer with img and Thank you customers-->
+
+    <div class="imgfooter">
+        <img class="logo_img_footer" alt="logo" src="footerpizza.webp"/>
+        <p class="footer-text">Thank you for ordering our pizza!</p>
+    </div>
+
+</footer>
+
+</body>
+</html>
